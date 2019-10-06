@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-8 mx-auto">
+          <div class="header text-center">
+            Rock Paper Scissors
+          </div>
+          <div id="app">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6 col-6 mx-auto">
+                <div class="player-one-name">
+                  <p class="text-center">Computer</p>
+                </div>
+                <div class="computer">
+                  <div class="card">
+                    <img
+                      src="./img/3.png"
+                      id="comp-move"
+                      alt="Computer's Move"
+                      id="computer-move"
+                      class="card-img-top"
+                    />
+                    <div id="comp-card-name" class="card-title text-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6 col-6 mx-auto">
+                <div class="player-two-name">
+                  <p class="text-center">Select Your Move</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-4 col-4">
+                <div class="card move" onclick="showResult('0')">
+                  <img src="img/0.png" alt="Rock" class="card-img-top" />
+                  <p class="card-title text-center">Rock</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 col-4">
+                <div class="card move" onclick="showResult('1')">
+                  <img src="img/1.png" alt="Paper" class="card-img-top" />
+                  <p class="card-title text-center">Paper</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 col-4">
+                <div class="card move" onclick="showResult('2')">
+                  <img src="img/2.png" alt="Scissors" class="card-img-top" />
+                  <p class="card-title text-center">Scissors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 col-12 mx-auto">
+          <div id="result-pane">
+            <p id="result-text" class="text-center"></p>
+          </div>
+          <div class="text-center" id="exit-button">
+            <button class="btn btn-outline-danger" onclick="exitApp()">Exit</button>
+          </div>
+        </div>
+      </div>
+      <div id="play-button-container" class="row">
+        <div id="button-wrapper" class="col-md-4 col-sm-8 mx-auto">
+          <button
+            id="play-button"
+            class="btn mx-auto btn btn-success"
+            onclick="displayApp()"
+          >
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

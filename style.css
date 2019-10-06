@@ -1,0 +1,39 @@
+.header {
+    background: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    font: bolder;
+    font-size: 24px;
+}
+
+#button-wrapper {
+    text-align: center;
+}
+
+#play-button {
+    margin-top: 50%;
+    width: 30%;
+}
+
+#app {
+    display: none;
+}
+
+.move:hover {
+    border: 3px solid greenyellow;
+}
+
+#result-text {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#result-pane {
+    display: none;
+    height: 40px;
+}
+
+#exit-button {
+    display: none;
+    margin-top: 50px;
+}
